@@ -1,2 +1,1 @@
-# deep-greedy-scheduling-solver
-Deep Greedy Scheduling Solver
+# Approaching Scheduling Problems via a Deep Hybrid Greedy Model and Supervised Learning
