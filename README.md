@@ -9,14 +9,13 @@ This is the official paper repository for our paper 'Approaching Scheduling Prob
 
 ## Installation
 
-We suggest creating a virtual environment via
+We suggest to create a virtual environment first via
 ```
 python -m venv venv
 ```
 and install the required packagees with
 ```
 venv/bin/python -m pip install -r requirements.txt
-
 ```
 
 ## Structure 
