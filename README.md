@@ -42,3 +42,12 @@ Find installation instructions [here](https://www.ibm.com/support/knowledgecente
 ## Citation
 
 Will be added soon.
+
+## Troubleshooting
+If `Can not execute command 'cpoptimizer -angel'. Please check availability of required executable file.` or `Executable file should be given in 'execfile' context attribute.`,
+the link to the cpoptimizer `CPLEX_Studio_Community1210/cpoptimizer/bin/x86-64_linux/cpoptimizer` in
+`venv/lib/python3.6/site-packages/docplex/cp/solver/solver_local.py`
+is missing:
+- Add the cpotimizer to the PATHs (recommended).
+- Alternatively, add the link manually by replacing `xfile` and `context.execfile` with `cplex/CPLEX_Studio_Community1210/cpoptimizer/bin/x86-64_linux/cpoptimizer` in `class CpoSolverLocal(solver.CpoSolverAgent` (**HACKY**).
+Don't forget to restart the kernel afterwards.
